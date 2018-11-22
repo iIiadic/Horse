@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		BF191E5621A6ADB100EAB791 /* Horse.h in Headers */ = {isa = PBXBuildFile; fileRef = BF191E5421A6ADB100EAB791 /* Horse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF191E5D21A6ADE700EAB791 /* Horse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF191E5C21A6ADE700EAB791 /* Horse.swift */; };
+		BF191E6521A6B09B00EAB791 /* HorseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF191E6421A6B09B00EAB791 /* HorseTests.swift */; };
+		BF191E6721A6B09B00EAB791 /* Horse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF191E5121A6ADB100EAB791 /* Horse.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF191E6821A6B09B00EAB791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF191E4821A6ADB100EAB791 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF191E5021A6ADB100EAB791;
+			remoteInfo = Horse;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BF191E5121A6ADB100EAB791 /* Horse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Horse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF191E5421A6ADB100EAB791 /* Horse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Horse.h; sourceTree = "<group>"; };
 		BF191E5521A6ADB100EAB791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF191E5C21A6ADE700EAB791 /* Horse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horse.swift; sourceTree = "<group>"; };
+		BF191E6221A6B09B00EAB791 /* HorseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF191E6421A6B09B00EAB791 /* HorseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseTests.swift; sourceTree = "<group>"; };
+		BF191E6621A6B09B00EAB791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF191E5F21A6B09B00EAB791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF191E6721A6B09B00EAB791 /* Horse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				BF191E5321A6ADB100EAB791 /* Horse */,
+				BF191E6321A6B09B00EAB791 /* HorseTests */,
 				BF191E5221A6ADB100EAB791 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				BF191E5121A6ADB100EAB791 /* Horse.framework */,
+				BF191E6221A6B09B00EAB791 /* HorseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,9 +74,19 @@
 			isa = PBXGroup;
 			children = (
 				BF191E5421A6ADB100EAB791 /* Horse.h */,
+				BF191E5C21A6ADE700EAB791 /* Horse.swift */,
 				BF191E5521A6ADB100EAB791 /* Info.plist */,
 			);
 			path = Horse;
+			sourceTree = "<group>";
+		};
+		BF191E6321A6B09B00EAB791 /* HorseTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF191E6421A6B09B00EAB791 /* HorseTests.swift */,
+				BF191E6621A6B09B00EAB791 /* Info.plist */,
+			);
+			path = HorseTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,39 @@
 			productReference = BF191E5121A6ADB100EAB791 /* Horse.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BF191E6121A6B09B00EAB791 /* HorseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF191E6C21A6B09B00EAB791 /* Build configuration list for PBXNativeTarget "HorseTests" */;
+			buildPhases = (
+				BF191E5E21A6B09B00EAB791 /* Sources */,
+				BF191E5F21A6B09B00EAB791 /* Frameworks */,
+				BF191E6021A6B09B00EAB791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF191E6921A6B09B00EAB791 /* PBXTargetDependency */,
+			);
+			name = HorseTests;
+			productName = HorseTests;
+			productReference = BF191E6221A6B09B00EAB791 /* HorseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BF191E4821A6ADB100EAB791 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Vincent Esche";
 				TargetAttributes = {
 					BF191E5021A6ADB100EAB791 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					BF191E6121A6B09B00EAB791 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -111,12 +171,20 @@
 			projectRoot = "";
 			targets = (
 				BF191E5021A6ADB100EAB791 /* Horse */,
+				BF191E6121A6B09B00EAB791 /* HorseTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BF191E4F21A6ADB100EAB791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF191E6021A6B09B00EAB791 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,10 +198,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF191E5D21A6ADE700EAB791 /* Horse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF191E5E21A6B09B00EAB791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF191E6521A6B09B00EAB791 /* HorseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF191E6921A6B09B00EAB791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF191E5021A6ADB100EAB791 /* Horse */;
+			targetProxy = BF191E6821A6B09B00EAB791 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BF191E5721A6ADB100EAB791 /* Debug */ = {
@@ -260,6 +345,7 @@
 		BF191E5A21A6ADB100EAB791 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -278,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.regexident.Horse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -285,6 +372,7 @@
 		BF191E5B21A6ADB100EAB791 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -307,6 +395,40 @@
 			};
 			name = Release;
 		};
+		BF191E6A21A6B09B00EAB791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HorseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.regexident.HorseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		BF191E6B21A6B09B00EAB791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HorseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.regexident.HorseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -324,6 +446,15 @@
 			buildConfigurations = (
 				BF191E5A21A6ADB100EAB791 /* Debug */,
 				BF191E5B21A6ADB100EAB791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF191E6C21A6B09B00EAB791 /* Build configuration list for PBXNativeTarget "HorseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF191E6A21A6B09B00EAB791 /* Debug */,
+				BF191E6B21A6B09B00EAB791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
